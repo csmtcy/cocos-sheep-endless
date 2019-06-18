@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Landed",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "f173428f-868a-4751-b53d-667e4bde58e6"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "8f16b394-352d-4cb1-841b-1eb593fa9b94"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "f173428f-868a-4751-b53d-667e4bde58e6"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "3b4b14fc-9cec-4fc8-a00c-a99f6a179bf3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.5,
+      "func": "run",
+      "params": []
+    }
+  ]
+}

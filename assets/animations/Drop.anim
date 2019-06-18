@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Drop",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "7225478e-73a2-47d9-ab8c-dde7ffc5e17f"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "d45a9e59-32db-47dc-bbd7-07709496cab4"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
