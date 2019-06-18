@@ -25,7 +25,7 @@ cc.Class({
 
     stopRun() {
         this.changeState("Dead");
-        cc.eventManager.pauseTarget(this.node);
+        this.turnOffListener();
     },
 
     landed() {
@@ -49,13 +49,20 @@ cc.Class({
 
     startRun () {
         this.changeState('Run');
-        cc.eventManager.addListener({
-            event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            onTouchBegan: function(touch, event) {
-                this.jump();
-                return true;
-            }.bind(this)
+
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, () => {
+            this.jump();
         }, this.node);
+
+        cc.find('Canvas').on(cc.Node.EventType.TOUCH_START, () => {
+            this.jump();
+        }, this.node);
+
+    },
+
+    turnOffListener() {
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN);
+        cc.find('Canvas').off(cc.Node.EventType.TOUCH_START);
     },
 
     update (dt) {
